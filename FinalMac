@@ -1,0 +1,14 @@
+bull = int(input())
+heal = float(input())
+dam = float(input())
+
+while bull > 0 :
+    heal = heal - dam
+    bull = bull - 1
+    if heal <= 0 :
+        break
+
+if heal > 0 :
+    print("alive : %.1f health"%(heal))
+elif heal <= 0 :
+    print("dead : %d bullet remain"%(bull))

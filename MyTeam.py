@@ -1,0 +1,5 @@
+name = []
+for i in range(0,5) :
+    name.append(input())
+for y in range(len(name)) :
+    print(name[y][0:name[y].index('#')])
